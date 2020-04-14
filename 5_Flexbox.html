@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+        .col {
+            min-height: 40vh;
+        }
+    </style>
+</head>
+<!--40vh means 40% of the screen-->
+<!--Flexbox is a CSS Layout Module that actually helps us with vertical or horizontal centering-->
+<!--d-flex class-->
+<!--justify-content class= center horizontally-->
+<!--justify-content-start,end,center,between,around -->
+<!--align-items = center vertically-->
+<!--align-items-start,end,center,between,around -->
+<!--only direct children will be affected-->
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col bg-warning d-flex justify-content-around align-items-center">
+            <p class="bg-info align-self-start">hello world</p>
+            <p class="bg-danger">hello world</p>
+            <p class="bg-success">hello world</p>
+            <p class="bg-primary align-self-end">hello world</p>
+        </div>
+    </div>
+</div>
+<div class="container bg-danger text-center text-uppercase m-5">separator</div>
+<!---why row class in div of bootstrap are so special bcz they are by default made flex box parent container-->
+
+<div class="container">
+    <div class="row">
+        <div class="col-9 mx-auto">
+            <p>
+                The sunflower (Helianthus annuus) is a living annual plant in the family Asteraceae, with a large flower head (capitulum). The stem of the flower can grow up to 3 metres tall, with a flower head that can be 30 cm wide. ... To grow well, sunflowers need full sun. 
+            </p>
+        </div>
+    </div>
+</div>
+
+<!---OR-->
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-9 ">
+            <p>
+                The sunflower (Helianthus annuus) is a living annual plant in the family Asteraceae, with a large flower head (capitulum). The stem of the flower can grow up to 3 metres tall, with a flower head that can be 30 cm wide. ... To grow well, sunflowers need full sun. 
+            </p>
+        </div>
+    </div>
+</div>
+
+<!--For vertical alignment the row class needs some height-->
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-9 ">
+            <p>
+                The sunflower (Helianthus annuus) is a living annual plant in the family Asteraceae, with a large flower head (capitulum). The stem of the flower can grow up to 3 metres tall, with a flower head that can be 30 cm wide. ... To grow well, sunflowers need full sun. 
+            </p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

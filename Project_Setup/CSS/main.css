@@ -1,0 +1,13 @@
+body {
+    font-family: 'Arvo',serif;
+}
+
+/*#skills{
+    padding: 480px 0!important; ( 480px for padding top and bottom, 0px for padding left and right, !important means it will override bootstap class p(padding))
+}*/
+
+.height{
+    /*height:1000px*/
+
+    min-height: 100vh;/*It will provide the container 100% of the screen*/
+}

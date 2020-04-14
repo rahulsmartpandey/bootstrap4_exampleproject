@@ -1,0 +1,217 @@
+<!--In this project we have not used CDN, we have downloaded bootstrap css and bootstrap js from getbootstrap.com & jquery from jquery.com & font awesome downloaded from fontawesome.com -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--bootstrap css-->
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <!--font-awesome-->
+    <script src="./JS/all.js"></script>
+    <!--Google fonts-- arvo CDN taken from w3school-->
+    <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet'>
+    <!--main css-->
+    <link rel="stylesheet" href="./CSS/main.css">
+</head>
+<!--Images can be downloaded from pexel.com-->
+<!--colors are choosen from coolors.co/app-->
+
+<body>
+    <div class="container bg-secondary text-white">
+        <div class="row">
+            <div class="col ">
+                <h1>standard heading</h1>
+                <!--using emmet = h1{standard heading} press enter-->
+                <p class="text-warning">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores architecto
+                    laborum, quod perferendis repellat eum voluptates nam perspiciatis laudantium neque?
+                </p>
+                <button type="button" class="btn btn-primary mr-5 p-1  ">Primary Button</button>
+                <button type="button" class="btn btn-danger ">Danger Button</button>
+
+            </div>
+        </div>
+    </div>
+    <!--End of container-->
+    <div class="container-fluid bg-warning text-dark py-5">
+        <div class="row">
+            <div class="col">
+                <h1 class="display-1 text-danger">display-1</h1>
+                <p class="display-1">display-1</p>
+                <p class="display-4">display-4</p>
+                <p class="text-success lead px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                    molestias temporibus distinctio maxime reprehenderit, mollitia id deleniti ab adipisci eum?</p>
+                <!--lead class is used to make the paragrapgh stand out from diff para with help of padding, margin and style-->
+                <button type="button" class="btn btn-dark text-danger mt-4">Button Dark</button>
+                <button type="button" class="btn btn-success text-muted mb-4">Button Success</button>
+                <button type="button" class="btn btn-primary text-white mx-3">Button Primary</button>
+            </div>
+        </div>
+    </div>
+
+    <!--End of container-fluid-->
+
+    <!--diff b/w container-fuild & section is that we get padding incase of section and we can even use id to use more css-->
+    <!--section with container class behave as container-fluid with padding-->
+    <section id="skills" class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row height align-item-center text-center">
+                <!--to vertical allign some component, we need height-->
+                <div class="col">
+                    <h1>Section Example</h1>
+                    <!--lorem20 press tab, we will get those 20 words present in para-->
+                    <p class="display-4 text-warning">Paragraph Display</p>
+                    <p class="text-info px-5 text-right">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Cupiditate non deserunt quibusdam unde iure voluptates culpa consequuntur ratione! Voluptatibus,
+                        earum!</p>
+                    <p class="text-light text-text-left py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Et quam natus quod qui. Quidem ducimus ipsa voluptatibus minima molestiae aliquid!</p>
+                    <button type="button" class="btn btn-warning">btn warning</button>
+                    <button type="button" class="btn btn-info text-dark">btn info</button>
+                    <button type="button" class="btn btn-light text-dark">btn light</button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--End Of first Section-->
+
+    <section class="bg-light">
+        <div class="container">
+            <!--for aligh-item to work so as to make it vertically center we need some sort of height-->
+            <!--For justify-item to work so as to make it horizontally center we need some sort of column width-->
+            <div class="row height align-item-center justify-content-center">
+                <!--row is a flexbox parent container in bootstrap-->
+                <div class="col-9">
+                    <h1 class="display-2 text-uppercase text-danger">udemy</h1>
+                    <p class="text-muted lead my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit et
+                        dolor, eveniet quasi odio assumenda voluptatum tempore minus in quis.</p>
+                    <a href="#" class="btn btn-secondary text-danger text-uppercase mt-3 p-3">explore</a>
+                    <a href="#" class="btn btn-primary text-white mx-3 mt-3 p-3 text-uppercase">explore</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end of 2nd section-->
+
+    <section class="bg-primary py-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col text-center bg-danger">
+                    <i class="fas fa-home fa-3x text-light"></i>
+                    <h3 class="text-dark">fa-home</h3>
+                </div>
+                <div class="col text-center bg-warning">
+                    <i class="fas fa-home fa-3x text-light"></i>
+                    <h3 class="text-dark">fa-home</h3>
+                </div>
+                <div class="col text-center bg-secondary">
+                    <i class="fas fa-home fa-3x text-light"></i>
+                    <h3 class="text-dark">fa-home</h3>
+                </div>
+                <div class="col text-center bg-success">
+                    <i class="fas fa-home fa-3x text-light"></i>
+                    <h3 class="text-dark">fa-home</h3>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!--end of first grid-->
+
+    <section class="bg-success py-5 ">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-8 bg-secondary mb-3 text-center">
+                    <i class="fas fa-star fa-3x"></i>
+                    <h3 class="text-dark">star</h3>
+                </div>
+                <div class="col-4 bg-warning mb-3 text-center">
+                    <i class="fas fa-star fa-3x"></i>
+                    <h3 class="text-dark">star</h3>
+                </div>
+                <div class="col-9 bg-light mb-3 text-center">
+                    <i class="fas fa-star fa-3x"></i>
+                    <h3 class="text-dark">star</h3>
+                </div>
+                <div class="col-3 bg-danger mb-3 text-center">
+                    <i class="fas fa-star fa-3x"></i>
+                    <h3 class="text-dark">star</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--end of 2nd grid-->
+
+    <section class="bg-light py-5">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <i class="fab fa-html5 fa-3x text-info"></i>
+                <h2 class="text-capitalize text-dark">learn html</h2>
+                <p class="text-muted lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores tempore consequatur eaque? Voluptas cupiditate alias fugiat, cumque dolorum pariatur vitae.</p>
+
+            </div>
+            <div class="col-md-4">
+                <i class="fab fa-css3 fa-3x text-info"></i>
+                <h2 class="text-capitalize text-dark">learn css</h2>
+                <p class="text-muted lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores tempore consequatur eaque? Voluptas cupiditate alias fugiat, cumque dolorum pariatur vitae.</p>
+
+            </div>
+            <div class="col-md-4">
+                <i class="fab fa-js fa-3x text-info"></i>
+                <h2 class="text-capitalize text-dark">learn javascript</h2>
+                <p class="text-muted lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores tempore consequatur eaque? Voluptas cupiditate alias fugiat, cumque dolorum pariatur vitae.</p>
+
+            </div>
+            
+        </div>
+    </div>
+
+    </section>
+
+
+    <!--last section-->
+
+    <section class="bg-warning py-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <i class="fab fa-html5 fa-3x text-white"></i>
+                    <h2 class="text-capitalize text-dark">learn html</h2>
+                    <p class="text-muted lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores tempore consequatur eaque? Voluptas cupiditate alias fugiat, cumque dolorum pariatur vitae.</p>
+    
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-6">
+                    <i class="fab fa-css3 fa-3x text-white"></i>
+                    <h2 class="text-capitalize text-dark">learn css</h2>
+                    <p class="text-muted lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores tempore consequatur eaque? Voluptas cupiditate alias fugiat, cumque dolorum pariatur vitae.</p>
+    
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mx-auto">
+                    <i class="fab fa-js fa-3x text-white"></i>
+                    <h2 class="text-capitalize text-dark">learn javascript</h2>
+                    <p class="text-muted lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores tempore consequatur eaque? Voluptas cupiditate alias fugiat, cumque dolorum pariatur vitae.</p>
+    
+                </div>
+                
+            </div>
+        </div>
+    
+        </section>
+
+    <!--jquery-->
+    <script src="./JS/jquery-3.5.0.min.js"></script>
+    <!--bootstrap js-->
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
